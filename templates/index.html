@@ -11,9 +11,15 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="static/main.css" />
 		<noscript><link rel="stylesheet" href="static/noscript.css" /></noscript>
+		<script src="https://d3js.org/d3.v5.min.js"></script>
 	</head>
 	<body class="is-preload">
 
+	<script>
+		d3.csv("/Resources/BTC_hist.csv").then(function(btc) {
+			console.log(btc)
+			});
+	</script>
 	
 
 		<!-- Sidebar -->
